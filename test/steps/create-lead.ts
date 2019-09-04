@@ -21,7 +21,7 @@ describe('CreateLeadStep', () => {
     protoStep = new ProtoStep();
   });
 
-  it('should return expected step metadata', () => {
+  it('should return expected step metadata ', () => {
     const stepDef: StepDefinition = stepUnderTest.getDefinition();
     expect(stepDef.getStepId()).to.equal('CreateLead');
     expect(stepDef.getName()).to.equal('Create a Salesforce Lead');
